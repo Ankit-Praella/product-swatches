@@ -70,11 +70,8 @@
     
       </div>
     
-      <script class="variantsJSON-{{ product.id }}" data-variantJSON type="application/json">
-        {{ product.variants | json }}
-      </script>
-      <script id="product-variant-json" type="application/json">
-        {{ product | json }}
-      </script>
+       <script class="variantsJSON-{{ product.id }}" data-variantJSON type="application/json">
+    {{ product.variants | json }}
+  </script>
     {% endform %}
     
