@@ -51,14 +51,15 @@
           </div>
           <div class="row">
             <div class="col-12 d-flex">
+     
               <button id="add_cart" class="btn btn-outline-dark btn-sm flex-grow-1"
-                type="submit"
-                name="add"
-                aria-label="{{ 'products.product.add_to_cart' | t | escape }}"
-                {% unless current_variant.available %}disabled{% endunless %}>
-                <span class="add-text">{%- if current_variant.available -%}{{ 'products.product.add_to_cart' | t }}{%- else-%}{{ 'products.product.sold_out' | t }}{%- endif -%}</span>
-                <span class="spinner"></span>
-              </button>
+                    type="submit"
+                      name="add"
+                      aria-label="{{ 'products.product.add_to_cart' | t | escape }}"
+                      {% unless current_variant.available %}disabled{% endunless %}>
+                      <span class="add-text">{%- if current_variant.available -%}{{ 'products.product.add_to_cart' | t }}{%- else-%}{{ 'products.product.sold_out' | t }}{%- endif -%}</span>
+                      <span class="spinner"></span>
+                </button>
                 {% comment %} Dynamic Checkout Button {% endcomment %}
                 {% if section.settings.enable_dynamic_checkout %}
                     <div class="mt-2">{{ form | payment_button }}</div>
