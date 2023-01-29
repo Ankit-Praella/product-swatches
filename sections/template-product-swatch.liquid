@@ -154,9 +154,10 @@
                             {%- if current_variant.compare_at_price > current_variant.price -%}<span compare_at_price class="h6 text-gray-600 mr-2 money compare_at_price" data-comparePrice>{{ current_variant.compare_at_price | money }}</span>{%- endif -%}
                             <span actual_price class="h5 actual-price money" data-currentPrice>{{ current_variant.price | money }}</span>
                         </div>
+                        {%- form 'product', product, data-productid: product.id, id: 'product-form-installment', class: 'installment caption-large mt-4' -%}
                             <input type="hidden" name="id" data-productid="{{ product.id }}" value="{{ product.selected_or_first_available_variant.id }}">
                             {{ form | payment_terms }}
-                       
+                        {%- endform -%}
                     {%- when 'description' -%}
                         {% if product.description %}
                             <h5 class="mt-5 mb-2">{{ 'products.product.description' | t }}</h5>
