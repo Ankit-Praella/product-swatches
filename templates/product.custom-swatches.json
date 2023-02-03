@@ -1,0 +1,39 @@
+{
+  "sections": {
+    "main": {
+      "type": "custom-swatches",
+      "blocks": {
+        "dae29c17-6999-4830-93d4-892fb1d800e8": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "4eedfbf7-efb8-41cc-b728-20b83d04009e": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "3f54475b-e0a9-4656-a766-2e9648acb323": {
+          "type": "product_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "dae29c17-6999-4830-93d4-892fb1d800e8",
+        "4eedfbf7-efb8-41cc-b728-20b83d04009e",
+        "3f54475b-e0a9-4656-a766-2e9648acb323"
+      ],
+      "settings": {
+        "template_type": "classic-horizontal",
+        "fluid_layout": false,
+        "show_vendor": true,
+        "enable_dynamic_checkout": false,
+        "product_tabs_placement": "below_slider"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
